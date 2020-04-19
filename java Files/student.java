@@ -22,6 +22,8 @@ class student extends JFrame
 		zz.sem=semi;
 		zz.year=year;
 		zz.sec=sec;
+		setLayout(null);
+		setSize(800,600);
 		setLayout(new FlowLayout());
 		setVisible(true);
 		setSize(1920,1040);
@@ -29,8 +31,8 @@ class student extends JFrame
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		zz.pan=new JPanel();
-		zz.pan.setMinimumSize(new Dimension(1880,2000));
-		zz.pan.setPreferredSize(new Dimension(1880,2000));
+		zz.pan.setMinimumSize(new Dimension(188,1000));
+		zz.pan.setPreferredSize(new Dimension(188,1000));
 		zz.pan.setLayout(null);
 		zz.pan.setVisible(true);
 		
@@ -83,7 +85,7 @@ class student extends JFrame
 		Font f1=new Font("Arial",Font.BOLD,12);
 		b0=new JButton("GO BACK");
 		b0.setFont(f1);
-		b0.setBounds(1750,20,100,25);
+		b0.setBounds(850,950,100,25);
 		b0.setBackground(Color.WHITE);
 		b0.setBorder(BorderFactory.createLineBorder(Color.GRAY, 4));
 		zz.pan.add(b0);
@@ -91,7 +93,7 @@ class student extends JFrame
 		Font f2=new Font("Arial",Font.BOLD,18);
 		b1=new JButton("ADD STUDENT");
 		b1.setFont(f2);
-		b1.setBounds(1300,100,200,40);
+		b1.setBounds(1100,150,200,40);
 		b1.setBackground( Color.WHITE);
 		b1.setForeground(Color.GRAY);
 		//b1.setContentAreaFilled(false);
@@ -99,7 +101,7 @@ class student extends JFrame
 		zz.pan.add(b1);
 		b2=new JButton("REMOVE STUDENT");
 		b2.setFont(f2);
-		b2.setBounds(1500,100,220,40);
+		b2.setBounds(800,150,220,40);
 		b2.setBackground( Color.WHITE);
 		b2.setForeground(Color.GRAY);
 		//b2.setContentAreaFilled(false);
@@ -220,8 +222,8 @@ class student extends JFrame
 								zz.r2.setBounds(950,b,50,40);
 								zz.pan.add(zz.r1);
 								zz.pan.add(zz.r2);
-								zz.r1.setBackground(Color.YELLOW);
-								zz.r2.setBackground(Color.YELLOW);
+								zz.r1.setBackground(Color.WHITE);
+								zz.r2.setBackground(Color.WHITE);
 								
 								//Font f5=new Font("Arial",Font.BOLD,18);
 								JLabel bu=new JLabel(""+USN.get(i)+"");
@@ -255,12 +257,7 @@ class student extends JFrame
 									public void actionPerformed(ActionEvent ae)
 									{
 										try
-										{
-											//Class.forName("com.mysql.jdbc.Driver");
-											//Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/Attendance_Mgmt_System?user=root&password=password&useUnicode=true&characterEncoding=UTF-8","root","password");//your username and password
-											Connection conn = Connect.ConnectDb();
-
-										
+										{										
 											if(!zz.r1.isSelected() && !zz.r2.isSelected())
 											{
 												JOptionPane.showMessageDialog(null,"Please Update all Students Details");
@@ -295,19 +292,12 @@ class student extends JFrame
 													catch (SQLException e) 
 													{
 														e.printStackTrace();
-													}																								
-												//if(zz.r2.isSelected())
-												//{
-												//	String sql2="update attendance set no_of_classes_absent=no_of_classes_absent+1 where USN='"+zz.usn+"' and course_id='"+zz.course+"' and year='"+zz.year+"' and sem='"+zz.sem+"'";
-												//	PreparedStatement ps2=conn.prepareStatement(sql2);
-												//	ResultSet rs2=ps2.executeQuery();
-												//}
 												JOptionPane.showMessageDialog(null,"Attendance Updated");
 												setVisible(false);
 												hh.h1.setVisible(true);
 											}
 										}
-								
+										}
 																											
 										catch(Exception e)
 										{
@@ -318,35 +308,14 @@ class student extends JFrame
 											
 									}	
 										
-								});
+								}
+					);
 								
-				
-				//int Usize=USN.size();
-				//int c=300;
-
-					//for(int i=0;i<Usize;i++)
-					//{
-					///	Font f3=new Font("Arial",Font.BOLD,18);
-					//	JLabel bu=new JLabel(""+USN.get(i)+"");
-					//	bu.setFont(f3);
-					//	bu.setBounds(600,c,300,50);
-					//	c=c+50;
-					//	pan.add(bu);
-					//}
-					
-					
-			
-							
-			}
+				}
 			catch(Exception e){
 				System.out.println(e);
 			}
 		
-		
-		
-	}
-	
-				
+		}
 }
-
-//code created by sumukha
+	

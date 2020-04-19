@@ -92,16 +92,16 @@ class removestudent extends JFrame
 								String sql2="delete from attendance where USN='"+t0.getText()+"' and course_id='"+course+"' and year='"+year+"' and sem='"+sem+"'";
 								PreparedStatement ps=conn.prepareStatement(sql);
 								PreparedStatement ps2=conn.prepareStatement(sql2);
-								ResultSet rs=ps.executeQuery();
+								int rs=ps.executeUpdate();
 								ResultSet rs2=ps2.executeQuery();
-								if(rs.next())
+								/*if(rs.nextInt())
 								{
 									JOptionPane.showMessageDialog(null,"Student Removed Successfully!!");
 									pp.sp.dispose();
 									pp.sp=new student(course,sem,year,sec);
 									dispose();
 									//cc.c1.setVisible(true);
-								}
+								}*/
 							}
 						}
 						catch(SQLException e)
