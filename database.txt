@@ -17,11 +17,11 @@ DATABASE OPERATIONS:
 
 7. create table student(USN varchar(20),name varchar(25),course_id varchar(20),sem varchar(20),sec varchar(10),primary key(USN),Foreign key(course_id) references coursecode(course_code) on delete cascade,Foreign key(sem) references semister(sem) on delete cascade,Foreign key(sec) references section(sec) on delete cascade);
 
-8. create table attendance(USN varchar(20),course_id varchar(20),no_of_attended_classes int,no_of_classes_absent int,total_classes int,year int,attendace_percent,sem varchar(20),Foreign key(USN) references student(USN) on delete cascade,Foreign key(course_id) references coursecode(course_code) on delete cascade,Foreign key(year) references years(year) on delete cascade,Foreign key(sem) references semister(sem) on delete cascade);
+8. create table attendance(USN varchar(20),course_id varchar(20),no_of_attended_classes int,no_of_classes_absent int,total_classes int,year int,attendace_percent float,sem varchar(20),Foreign key(USN) references student(USN) on delete cascade,Foreign key(course_id) references coursecode(course_code) on delete cascade,Foreign key(year) references years(year) on delete cascade,Foreign key(sem) references semister(sem) on delete cascade);
  
 
 
-9. insert into admin values('admin_name',9898989898,'admin','adminpass');         //similarlay you can add all the admins and their password
+9. insert into admin values('admin_name',989898,'admin','adminpass');         //similarlay you can add all the admins and their password
 
 10. insert into semister values('3rd Semister');
 11. insert into semister values('4th Semister');
@@ -38,6 +38,101 @@ DATABASE OPERATIONS:
 19. insert into section values('A Section');
 20. insert into section values('B Section');
   
+mysql> select * from coursecode;
++-------------+
+| course_code |
++-------------+
+| 17CS31      |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> insert into coursecode value("18CS031");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into coursecode value("18CS032");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into coursecode value("18CS033");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into coursecode value("18CS034");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into coursecode value("18CS035");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into coursecode value("18CS036");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into coursecode value("18CS037");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into course values("18CS031","java","3rd Semister","ari",2018);
+
+mysql> describe course;
+
+mysql> insert into course values("18CS032","DAA","3rd Semister","ari",2018);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into course values("18CS033","OS","3rd Semister","ari",2018);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into course values("18CS034","Maths","3rd Semister","ari",2018);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into course values("18CS035","DBMS","3rd Semister","ari",2018);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from student;
+Empty set (0.00 sec)
+mysql> select * from section;
++-----------+
+| sec       |
++-----------+
+| A Section |
+| B Section |
++-----------+
+2 rows in set (0.01 sec)
+
+mysql> insert into student values("1nt18cs021","arihant","18CS031","3rd Semister","A Section");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into student values("1nt18cs022","aryan","18CS031","3rd Semister","B Section");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from coursecode;
++-------------+
+| course_code |
++-------------+
+| 17CS31      |
+| 18CS031     |
+| 18CS032     |
+| 18CS033     |
+| 18CS034     |
+| 18CS035     |
+| 18CS036     |
+| 18CS037     |
++-------------+
+8 rows in set (0.00 sec)
+
+mysql> insert into coursecode values("18CS038");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into coursecode values("18CS039");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into coursecode values("18CS040");
+Query OK, 1 row affected (0.00 sec)
+
+
+
+
+//*Below are the commands provided earlier which were not working
+
+
+
+
+
 
 21.CREATE or replace PROCEDURE cpr
    AS
