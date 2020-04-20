@@ -92,9 +92,9 @@ class addstudent extends JFrame
 								PreparedStatement ps2=conn.prepareStatement(sql2);
 								int rs=ps.executeUpdate();
 								int rs2=ps2.executeUpdate();
-								/*if(rs.next())
-								{
-									JOptionPane.showMessageDialog(null,"Student Added Successfully!!");
+								//if(rs.next())
+								//{
+									//JOptionPane.showMessageDialog(null,"Student Added Successfully!!");
 									pp.sp.dispose();
 									pp.sp=new student(course,sem,year,sec);
 									dispose();
@@ -103,13 +103,13 @@ class addstudent extends JFrame
 									//pp.sp.setVisible(false);
 									//pp.sp.setVisible(true);
 									
-								}*/
+								//}
 							}
 						}
 						catch(SQLException e)
 						{
 							System.out.println("Student details updated restart the application");
-							JOptionPane.showMessageDialog(null,e);
+							//JOptionPane.showMessageDialog(null,e);
 						}
 						catch(Exception e)
 						{
@@ -133,12 +133,10 @@ class addstudent extends JFrame
 						}
 						catch(Exception e)
 						{
-							System.out.println(e);
+							System.out.println("Updated");
 						}
 					}
 			});
 		
 	}
 }
-
-//code created by sumukha

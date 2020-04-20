@@ -85,7 +85,6 @@ class student extends JFrame
 		Font f1=new Font("Arial",Font.BOLD,12);
 		b0=new JButton("GO BACK");
 		b0.setFont(f1);
-		b0.setBounds(850,950,100,25);
 		b0.setBackground(Color.WHITE);
 		b0.setBorder(BorderFactory.createLineBorder(Color.GRAY, 4));
 		zz.pan.add(b0);
@@ -235,6 +234,8 @@ class student extends JFrame
 								usnarray.add(""+USN.get(i)+"");
 								
 								b3.setBounds(1100,b+300,100,30);
+								b0.setBounds(850,b+300,100,25);
+
 								b3.setForeground(Color.DARK_GRAY);
 								b3.setBackground(Color.WHITE);
 								b3.setBorder(BorderFactory.createBevelBorder(1));

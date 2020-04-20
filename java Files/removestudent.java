@@ -93,15 +93,15 @@ class removestudent extends JFrame
 								PreparedStatement ps=conn.prepareStatement(sql);
 								PreparedStatement ps2=conn.prepareStatement(sql2);
 								int rs=ps.executeUpdate();
-								ResultSet rs2=ps2.executeQuery();
-								/*if(rs.nextInt())
-								{
-									JOptionPane.showMessageDialog(null,"Student Removed Successfully!!");
+								int rs2=ps2.executeUpdate();
+						       //if(rs.nextInt())
+								//{
+									//JOptionPane.showMessageDialog(null,"Student Removed Successfully!!");
 									pp.sp.dispose();
 									pp.sp=new student(course,sem,year,sec);
 									dispose();
 									//cc.c1.setVisible(true);
-								}*/
+								//}
 							}
 						}
 						catch(SQLException e)
