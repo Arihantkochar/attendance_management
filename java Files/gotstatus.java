@@ -10,7 +10,7 @@ class gotstatus extends JFrame
 {
 	gotstatus(String usn,String year,String course,String sem)
 	{
-		setContentPane(new JLabel(new ImageIcon("course.jpg")));
+		setContentPane(new JLabel(new ImageIcon("back11.jpg")));
 		setLayout(null);
 		setSize(800,600);
 		setResizable(false);

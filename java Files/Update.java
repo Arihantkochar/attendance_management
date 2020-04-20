@@ -15,7 +15,7 @@ class Update extends JFrame
 	Update(String uname)
 	{
 		//String uname=st;
-		setContentPane(new JLabel(new ImageIcon("course.jpg")));
+		//setContentPane(new JLabel(new ImageIcon("course.jpg")));
 		JLabel l0;
 		Font f0=new Font("Georgia",Font.BOLD,24);
 		l0=new JLabel("Choose a Semister Below:");
@@ -23,6 +23,8 @@ class Update extends JFrame
 		l0.setForeground( Color.DARK_GRAY);
 		l0.setBounds(60,80,400,90);
 		add(l0);
+		setContentPane(new JLabel(new ImageIcon("back1.jpg")));
+		
 	
 		JButton b0,b1,b2,b3,b4,b5,b6;
 		Font f1=new Font("Arial",Font.BOLD,20);
@@ -32,7 +34,7 @@ class Update extends JFrame
 		b0.setFont(f1);
 		b0.setForeground( Color.BLACK);
 		b0.setBackground( Color.WHITE);
-		b0.setBounds(200,180,150,40);
+		b0.setBounds(200,180,200,50);
 		//b0.setContentAreaFilled(false);
 		b0.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 4));
 		//b0.setBorder(BorderFactory.createBevelBorder(1));
@@ -41,7 +43,7 @@ class Update extends JFrame
 		b1.setFont(f1);
 		b1.setForeground( Color.BLACK);
 		b1.setBackground( Color.WHITE);
-		b1.setBounds(450,180,150,40);
+		b1.setBounds(450,180,200,50);
 		//b1.setContentAreaFilled(false);
 		b1.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 4));
 		//b1.setBorder(BorderFactory.createBevelBorder(1));
@@ -50,7 +52,7 @@ class Update extends JFrame
 		b2.setFont(f1);
 		b2.setForeground( Color.BLACK);
 		b2.setBackground( Color.WHITE);
-		b2.setBounds(200,280,150,40);
+		b2.setBounds(200,280,200,50);
 		//b2.setContentAreaFilled(false);
 		b2.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 4));
 		//b2.setBorder(BorderFactory.createBevelBorder(1));
@@ -59,7 +61,7 @@ class Update extends JFrame
 		b3.setFont(f1);
 		b3.setForeground( Color.BLACK);
 		b3.setBackground( Color.WHITE);
-		b3.setBounds(450,280,150,40);
+		b3.setBounds(450,280,200,50);
 		//b3.setContentAreaFilled(false);
 		//b3.setBorder(BorderFactory.createBevelBorder(1));
 		b3.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 4));
@@ -68,7 +70,7 @@ class Update extends JFrame
 		b4.setFont(f1);
 		b4.setForeground( Color.BLACK);
 		b4.setBackground( Color.WHITE);
-		b4.setBounds(200,380,150,40);
+		b4.setBounds(200,380,200,50);
 		//b4.setContentAreaFilled(false);
 		b4.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 4));
 		//b4.setBorder(BorderFactory.createBevelBorder(1));
@@ -77,7 +79,7 @@ class Update extends JFrame
 		b5.setFont(f1);
 		b5.setForeground( Color.BLACK);
 		b5.setBackground( Color.WHITE);
-		b5.setBounds(450,380,150,40);
+		b5.setBounds(450,380,200,50);
 		//b5.setContentAreaFilled(false);
 		//b5.setBorder(BorderFactory.createBevelBorder(1));
 		b5.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 4));

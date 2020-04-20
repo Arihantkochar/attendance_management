@@ -19,7 +19,7 @@ class courseselect extends JFrame
 {
 	courseselect(String semrec,String user,String y,String sec)
 	{
-		setContentPane(new JLabel(new ImageIcon("course.jpg")));
+		setContentPane(new JLabel(new ImageIcon("back12.jpeg")));
 		String s=semrec;
 		JLabel l0,l1,l2,l3;
 		Font f4=new Font("skia",Font.BOLD,12);

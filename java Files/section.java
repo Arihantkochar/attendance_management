@@ -17,7 +17,8 @@ class section extends JFrame
 	{
 		
 		
-		setContentPane(new JLabel(new ImageIcon("course.jpg")));
+		//setContentPane(new JLabel(new ImageIcon("course.jpg")));
+		setContentPane(new JLabel(new ImageIcon("back1.jpg")));
 		
 		JLabel l0=new JLabel("Please Choose the Section Below:");
 		Font f3=new Font("skia",Font.ITALIC,20);

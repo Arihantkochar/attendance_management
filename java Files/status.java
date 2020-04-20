@@ -10,7 +10,9 @@ class status extends JFrame
 {
 	status(String name)
 	{
-		setContentPane(new JLabel(new ImageIcon("course.jpg")));
+		//setContentPane(new JLabel(new ImageIcon("course.jpg")));
+		setContentPane(new JLabel(new ImageIcon("back3.jpeg")));
+		
 		setLayout(null);
 		setSize(800,600);
 		setResizable(false);

@@ -10,7 +10,7 @@ class addstudent extends JFrame
 {
 	addstudent(String course,String sem,String sec,String year)
 	{
-		setContentPane(new JLabel(new ImageIcon("course.jpg")));
+		setContentPane(new JLabel(new ImageIcon("back7.jpg")));
 		setLayout(null);
 		setSize(800,600);
 		setResizable(false);

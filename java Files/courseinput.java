@@ -9,7 +9,7 @@ class courseinput extends JFrame
 	courseinput(String sem,String user,String sec)
 	{
 		
-		setContentPane(new JLabel(new ImageIcon("course.jpg")));
+		setContentPane(new JLabel(new ImageIcon("back10.jpeg")));
 		
 		JLabel l0,l1,l2,l3;
 		Font f0=new Font("Arial",Font.BOLD,20);

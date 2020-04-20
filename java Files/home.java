@@ -20,16 +20,16 @@ class Home extends JFrame
 	Home(String st)
 	{
 			String uname=st;
-			setContentPane(new JLabel(new ImageIcon("course.jpg")));
+			//setContentPane(new JLabel(new ImageIcon("course.jpg")));
 			JLabel l0,l1;
 			JButton b0,b1,b2;
 			Font f1=new Font("Georgia",Font.BOLD,25);
 			Font f2=new Font("Sitka Display",Font.ITALIC,30);
 			Font f3=new Font("Arial",Font.BOLD,20);
-			
+			setContentPane(new JLabel(new ImageIcon("back1.jpg")));
 			
 			l1=new JLabel("Computer Science And Engineering");// write branch or department name
-			l1.setForeground(Color.BLUE);
+			l1.setForeground(Color.WHITE);
 			l1.setFont(f1);
 			l1.setBounds(60,0,750,90);
 			add(l1);
@@ -37,13 +37,13 @@ class Home extends JFrame
 			b0.setFont(f3);
 			b0.setBounds(160,250,470,50);
 			b0.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 5));
-			b0.setBackground( Color.PINK);
+			b0.setBackground( Color.WHITE);
 			add(b0);
 			b1=new JButton("Get Attendance Status of Students");
 			b1.setFont(f3);
 			b1.setBounds(160,350,470,50);
 			b1.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 5));
-			b1.setBackground( Color.PINK);
+			b1.setBackground( Color.WHITE);
 			add(b1);
 			//b2=new JButton("Print Attendance of a Student");
 			///b2.setFont(f3);
@@ -79,7 +79,8 @@ class Home extends JFrame
 					 mm.name = rs.getString("name");
 					 l0=new JLabel("Welcome, "+mm.name);
 					 l0.setFont(f2);
-					 l0.setBounds(60,100,400,90);
+					 l0.setBounds(60,100,400,25);
+					 l0.setForeground(Color.WHITE);
 					 add(l0);
 				}
 				rs.close();

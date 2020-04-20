@@ -13,7 +13,9 @@ class course extends JFrame
 {
 	course(String val,String user,String sec)
 	{
-		setContentPane(new JLabel(new ImageIcon("course.jpg")));
+		setContentPane(new JLabel(new ImageIcon("back1.jpg")));
+		
+		//setContentPane(new JLabel(new ImageIcon("course.jpg")));
 		String recevedsem=val;
 		
 		JButton b0,b1,b3;

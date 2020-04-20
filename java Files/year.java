@@ -19,7 +19,9 @@ class year extends JFrame
 {
 	year(String recevedsem,String user,String sec)
 	{
-				setContentPane(new JLabel(new ImageIcon("course.jpg")));
+		setContentPane(new JLabel(new ImageIcon("back10.jpeg")));
+				
+		//setContentPane(new JLabel(new ImageIcon("course.jpg")));
 				JLabel l0;
 				Font f0=new Font("Arial",Font.ITALIC,20);
 				Font f3=new Font("Arial",Font.BOLD,12);

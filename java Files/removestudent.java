@@ -10,7 +10,7 @@ class removestudent extends JFrame
 {
 	removestudent(String course,String sem,String sec,String year)
 	{
-		setContentPane(new JLabel(new ImageIcon("course.jpg")));
+		setContentPane(new JLabel(new ImageIcon("back11.jpeg")));
 		setLayout(null);
 		setSize(800,600);
 		setResizable(false);
