@@ -7,7 +7,12 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jConnector"/>
+<<<<<<< HEAD
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javaFx"/>
 	<classpathentry kind="lib" path="/home/aryanjain/Desktop/mysql-connector-java_8.0.19-1ubuntu18.04_all/usr/share/java/mysql-connector-java-8.0.19.jar"/>
+=======
+	<classpathentry kind="lib" path="/Users/arihantkochar/Downloads/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48-bin.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javaFX"/>
+>>>>>>> 50df7bfe5065b97b65453703ac0d3643d72ac8ab
 	<classpathentry kind="output" path="bin"/>
 </classpath>

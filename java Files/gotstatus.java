@@ -66,9 +66,9 @@ class gotstatus extends JFrame
 					 String USN=rs.getString("USN");
 					 String attended=rs.getString("no_of_attended_classes");
 					 String absent=rs.getString("no_of_classes_absent");
-					 String total_classes=rs.getString("total_classes");
-					// String percent=rs.getString("attendance_percent");
-					 
+					 int  total_classes=rs.getInt("total_classes");
+					 total_classes-=1;
+					// String percent=rs.getString("attendance_percent")
 					 l0=new JLabel("USN : "+USN);
 					l1=new JLabel("No. of Classes Attended : "+attended);
 					l2=new JLabel("No. Of Classes Not Attended : "+absent);
